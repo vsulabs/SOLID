@@ -32,7 +32,7 @@ void TestMessage::changeAuthorOfNormalMessage()
 
 void TestMessage::changeAuthorOfSystemMessage()
 {
-    MessageBad msg(QString{}, "text");
+    SystemMessage msg("text");
     QVERIFY_EXCEPTION_THROWN(msg.setAuthor("test"), std::logic_error);
 }
 

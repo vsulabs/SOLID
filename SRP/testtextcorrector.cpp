@@ -1,4 +1,4 @@
-#include "testcorrectorgood.h"
+#include "textcorrectorgood.h"
 #include <QtTest/QtTest>
 
 class TestTextCorrector : public QObject
