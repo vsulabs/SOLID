@@ -33,6 +33,11 @@ void MessageBad::setText(const QString& value)
     text = value;
 }
 
+SystemMessage::SystemMessage(const QString &text)
+    : MessageBad(QString{}, text)
+{
+}
+
 QString SystemMessage::getAuthor() const
 {
     return "System";

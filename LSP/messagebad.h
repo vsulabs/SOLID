@@ -23,6 +23,7 @@ private:
 class SystemMessage : public MessageBad
 {
 public:
+    SystemMessage(const QString& text);
     QString getAuthor() const override;
     void setAuthor(const QString& value) override;
 };
